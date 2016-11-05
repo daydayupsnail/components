@@ -1,0 +1,58 @@
+<!doctype>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link href="popup.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<script src="../com/js/require.js" data-main="popup"></script>
+	<script>
+		require.config({
+		  paths:{
+			jquery:'../com/js/jquery-2.1.1',
+			jqueryUI:'http://code.jquery.com/ui/1.12.1/jquery-ui',
+			widget:'../widget/widget'
+		  }
+		})
+		require(["popup"],function(popup){
+			var popup1 = new popup.PopUp().alert({
+				content : "弹窗alert效果",
+				hasMask : true,
+				handlerAlert : function(){
+				  alert("点击了确定");
+				}
+			}).on("alert",function(){
+				alert("响应了第二次");
+			});
+			
+			var popup2=new popup.PopUp().confirm({
+				content : "弹窗confirm效果",
+				hasMask : false,
+				handlerConfirm : function(){
+					alert("confirm click");
+				},
+				handlerCancle : function(){
+					alert("confirm cancle");
+				}
+			})
+			var popup3=new popup.PopUp().prompt({
+				content : "弹窗prompt效果",
+				hasMask : false,
+				handlerPrompt : function(val){
+					alert("确定 prompt"+val);
+				},
+				handlerCancle : function(){
+					alert("取消 prompt")
+				}
+				
+			})
+			
+			var popup4=new popup.PopUp().common({
+				content : "简单弹窗",
+				width:400,
+				height:200
+			})
+		});
+	</script>
+</body>
+</html>

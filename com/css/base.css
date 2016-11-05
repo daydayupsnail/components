@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局属性重置*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;}
+*{ margin:0; padding:0;}
+a, a:visited, a:focus ,a:hover{text-decoration:none !important; display:block; color:#222; outline:none;}
+img, iframe {border:0;}
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+ol, ul {list-style:none;}
+
+/*公共样式*/
+body{ font-size:16px/1.5em; font-family:"宋体"; font-weight:normal;overflow-x: hidden; position:relative; z-index:1; width:100%; color:#222;}
+.clearfix:before, .clearfix:after {content: "";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+.center{ text-align:center}
+.cursor{cursor:pointer;}
+section{ width:100%;}
+.translatecenterX{ left:50%; transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);  -o-transform:translateX(-50%);   -ms-transform:translateX(-50%);}
+.translatecenterY{ top:50%; transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);  -o-transform:translateY(-50%);   -ms-transform:translateY(-50%);}
+.translatecenter{ left:50%;  top:50%; transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);  -o-transform:translate(-50%,-50%);   -ms-transform:translate(-50%,-50%);}
+/*字体大小和颜色*/
+.fontsizeOneSix{ font-size:16px !important;}
+.fontsizeOneFour{ font-size:14px !important;}
+.fontsizeOneFive{font-size:15px !important;}
+.fontsizeOneTwo{ font-size:12px !important;}
+/*显示隐藏*/
+.hidden{ display:none !important;}
+.show{ display:block}
+
