@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<style type="text/css">
+  .imgbg{
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  img{
+    position: absolute;
+    width:200px;
+    height:100px;
+  }
+</style>
+</head>
+<body>
+  <div class="imgbg">
+      <img src="../com/images/fish.jpg"/>
+  </div>
+
+<script type="text/javascript" src="../com/js/require.js"></script>
+<script type="text/javascript" src="../com/js/jquery.js"></script>
+  
+<script type="text/javascript" src="../widget/hoverbox.js"></script>
+<script type="text/javascript" src="./zoombox.js"></script>
+<script type="text/javascript">
+  require(['./zoombox'],function(ZoomBox){
+    //sectornav 放大效果
+    new ZoomBox({
+      "element":$(".imgbg img"), 
+      "edgehided":true,
+      "triggeredselector":"img",
+      "timeIn":400,
+      "timeOut":200,
+      "width":200,
+      "height":100,
+      "size":1.2
+    });
+  });
+</script>
+	
+</body>
+</html>
