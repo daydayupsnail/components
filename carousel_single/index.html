@@ -37,6 +37,7 @@
 <script type="text/javascript" src="../com/js/jquery.js"></script>
   
 <script type="text/javascript">
+$(function(){
   require(['./carousel_single'],function(CarouselSingle){
     new CarouselSingle({
       "fselector":".gallery .galleryinner",
@@ -46,6 +47,7 @@
       "itemdis":20
     });
   });
+});
 </script>
 	
 </body>

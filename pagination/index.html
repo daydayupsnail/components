@@ -39,7 +39,7 @@
   <script type="text/javascript" src="../com/js/jquery.js"></script>
  
   <script type="text/javascript">
-    
+$(function(){  
    require(['./pagination'],function(Pagination){
     var pagechange ={
       UI:function(n){
@@ -59,6 +59,7 @@
       triggerevt: pagechange.run
     });
   });
+});
   </script>
 </body>
 </html>
