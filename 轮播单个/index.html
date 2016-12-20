@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link href="gallery.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  .imgbox2 img{
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+     <div class="gallery">
+        <div class="galleryinner">
+            <div class="imgbox2">
+              <img src="../com/images/1.jpg">
+            </div>
+            <div class="imgbox2">
+              <img src="../com/images/2.jpg">
+              
+            </div>
+            <div class="imgbox2">
+              <img src="../com/images/3.jpg">
+            </div>
+            <div class="imgbox2">
+              <img src="../com/images/4.jpg">
+            </div>
+        </div>
+
+        <i class="last">&lt;&lt;</i>
+        <i class="next">&gt;&gt;</i>
+      </div>
+        
+      
+
+<script type="text/javascript" src="../com/js/require.js"></script>
+<script type="text/javascript" src="../com/js/jquery.js"></script>
+  
+<script type="text/javascript">
+  require(['./carousel_single'],function(CarouselSingle){
+    //sectornav 放大效果
+   //活动预告切换
+    new CarouselSingle({
+      "fselector":".gallery .galleryinner",
+      "selector":".imgbox2",
+      "lastbutton":".gallery .last",
+      "nextbutton":".gallery .next",
+      "itemdis":20
+    });
+  });
+</script>
+	
+</body>
+</html>
