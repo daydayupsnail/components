@@ -1,0 +1,34 @@
+/*翻页*/
+.slidepage{
+  overflow: hidden;
+}
+.slidepage .page{
+  display: none;
+}
+.slidepage .page.on{
+  display: block;
+}
+.pagenav {
+    margin-top: 58px;
+    text-align: left;
+    line-height: 22px;
+}
+.pagenav a{
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 7px;
+    height: 22px;
+    min-width: 9px;
+    display: inline-block;
+    border: #b7b7b7 solid 1px;
+    border-radius: 2px;
+    margin-right: 6px;
+    color: #8b8b8b;
+}
+.pagenav a.on,.pagenav a:hover{
+  background: #b7b7b7;
+  color:#f5f5f5;
+}
+.pagenav a.next{
+  margin-right: 0;  
+}

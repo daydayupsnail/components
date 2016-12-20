@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <link href="gallery.css" rel="stylesheet" type="text/css">
+  <link href="./gallery.css" rel="stylesheet" type="text/css">
 <style type="text/css">
   .imgbox2 img{
     width: 100%;
@@ -11,26 +11,64 @@
 </style>
 </head>
 <body>
-     <div class="gallery">
-        <div class="galleryinner">
-            <div class="imgbox2">
-              <img src="../com/images/1.jpg">
-            </div>
-            <div class="imgbox2">
-              <img src="../com/images/2.jpg">
-              
-            </div>
-            <div class="imgbox2">
-              <img src="../com/images/3.jpg">
-            </div>
-            <div class="imgbox2">
-              <img src="../com/images/4.jpg">
-            </div>
-        </div>
 
-        <i class="last">&lt;&lt;</i>
-        <i class="next">&gt;&gt;</i>
+<h4>
+  <div class="pagenav">
+    <a href="javascript:void(0)" class="last">&lt;&lt;</a>
+    <a href="javascript:void(0)" class="next">&gt;&gt;</a>
+  </div>
+  <hr/>
+</h4>
+<div class="gallery"> 
+   <div class="galleryinner">
+      <div class="imgbox2">
+        <img src="../com/images/1.jpg">
       </div>
+      <div class="imgbox2">
+        <img src="../com/images/1.jpg">
+
+      </div>
+      <div class="imgbox2">
+        <img src="../com/images/1.jpg">
+      </div>
+  </div>
+  <div class="galleryinner">
+      <div class="imgbox2">
+        <img src="../com/images/2.jpg">
+      </div>
+      <div class="imgbox2">
+        <img src="../com/images/2.jpg">
+      </div>
+      <div class="imgbox2">
+        <img src="../com/images/1.jpg">
+      </div>
+  </div>
+  <div class="galleryinner">
+      <div class="imgbox2">
+        <img src="../com/images/1.jpg">
+      </div>
+      <div class="imgbox2">
+        <img src="../com/images/2.jpg">
+
+      </div>
+      <div class="imgbox2">
+        <img src="../com/images/3.jpg">
+      </div>
+  </div>
+  <div class="galleryinner">
+      <div class="imgbox2">
+        <img src="../com/images/2.jpg">
+      </div>
+      <div class="imgbox2">
+        <img src="../com/images/3.jpg">
+      </div>
+      <div class="imgbox2">
+        <img src="../com/images/4.jpg">
+      </div>
+  </div>
+</div>
+
+      
         
       
 
@@ -38,14 +76,14 @@
 <script type="text/javascript" src="../com/js/jquery.js"></script>
   
 <script type="text/javascript">
-  require(['./carousel_whole'],function(CarouselSingle){
-    //sectornav 放大效果
-   //活动预告切换
-    new CarouselSingle({
-      "fselector":".gallery .galleryinner",
-      "selector":".imgbox2",
-      "lastbutton":".gallery .last",
-      "nextbutton":".gallery .next",
+  require(['./carousel_whole'],function(CarouselWhole){
+    new CarouselWhole({
+      "fselector":".gallery",
+      "selector":".galleryinner",
+      "lastbutton":".pagenav .last",
+      "nextbutton":".pagenav .next",
+      "autofalse":false,
+      "animationtime":800,
       "itemdis":20
     });
   });

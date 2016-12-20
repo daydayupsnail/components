@@ -1,0 +1,64 @@
+<script src=""></script><!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="pagination.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .slidepage{
+      height: 200px;
+      width: 30%;
+    }
+    .slidepage .page{  /*page 一般不绑定css，只做控制*/
+      width: 100%;
+      height: 100%;
+    }
+    .red {
+      background: red;
+    }
+    .green {
+      background: green;
+    }
+    .blue {
+      background: red;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="slidepage">
+    <div class="red page"></div>
+    <div class="green page"></div>
+    <div class="blue page"></div>
+  </div>
+  <div class="pagenav"></div>
+        
+  <script type="text/javascript" src="../com/js/require.js"></script>
+  <script type="text/javascript" src="../com/js/jquery.js"></script>
+ 
+  <script type="text/javascript">
+    
+   require(['./pagination'],function(Pagination){
+    var pagechange ={
+      UI:function(n){
+        $(".slidepage").find(".on").removeClass("on");
+        $(".slidepage .page").eq(n-1).addClass("on");
+      },
+      run:function(n){
+        pagechange.UI(n);
+        // 继续 ajax
+      }
+    }
+
+    //动态记载 内容， 要把这个初始化 仅放在 第一次 ajax 后
+    new Pagination({
+      selector:".pagenav",
+      totalpage: $(".slidepage .page").length,  
+      triggerevt: pagechange.run
+    });
+  });
+  </script>
+</body>
+</html>

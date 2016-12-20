@@ -178,6 +178,10 @@ define(function(require, exports, module) {
     },
     resetUI:function(){ // method 
       this.elems.css("left",this.dis+"px");
+      var e= this.felem.find(".on");
+      if(!e.length){
+        this.elems.eq(0).addClass("on");
+      }
       this.felem.find(".on").css("left",0);
     },
     golastUI:function(e,_r){ // method 上一个展示

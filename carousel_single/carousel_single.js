@@ -40,7 +40,7 @@ define('carousel_single',function(require, exports, module) {
         console.error("暂时不支持autofalse为true");
         return;
       }
-      if(this.length<2){
+      if(this.totalpage<2){
         return;
       }
       this.bind();
