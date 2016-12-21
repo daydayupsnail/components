@@ -14,31 +14,31 @@ hoverbox，给绑定事件的元素，增加了data-changeState，通过判定�
 
 ### 放大
 [demo](https://daydayupsnail.github.io/components/zoom/index.html)
-[使用说明](https://daydayupsnail.github.io/jscomponent/component-zoombox/)
+[使用说明](https://daydayupsnail.github.io/jscomponents/component-zoombox/)
 为了方便ie7也能实现放大，用js写了一个。没用css3动画。从中心放大。
 依赖于hoverbox
 
 ### 轮播单个
 [demo](https://daydayupsnail.github.io/components/carousel_single/index.html)
-[使用说明](https://daydayupsnail.github.io/jscomponent/component-carousel-single/)
+[使用说明](https://daydayupsnail.github.io/jscomponents/component-carousel-single/)
 实现单个轮播，鼠标悬停
-
+修复闪烁的bug，详情见使用说明
 
 ### 轮播整体
 [demo](https://daydayupsnail.github.io/components/carousel_whole/index.html)
-[使用说明](https://daydayupsnail.github.io/jscomponent/component-carousel-whole/)
+[使用说明](https://daydayupsnail.github.io/jscomponents/component-carousel-whole/)
 实现整体轮播，鼠标悬停，自动播放可控，继承重写切换效果
-
+修复闪烁的bug，详情见使用说明
 
 ### 回到顶部
 [demo](https://daydayupsnail.github.io/components/scrolltotop/index.html)
-[使用说明](https://daydayupsnail.github.io/jscomponent/component-scrolltotop/)
+[使用说明](https://daydayupsnail.github.io/jscomponents/component-scrolltotop/)
 给页面绑定滚动事件
 当页面滚下第一屏，显示回到顶部的按钮。否则影藏
 
 ### 分页导航
 [demo](https://daydayupsnail.github.io/components/pagination/index.html)
-[使用说明](https://daydayupsnail.github.io/jscomponent/component-pagination/)
+[使用说明](https://daydayupsnail.github.io/jscomponents/component-pagination/)
 根据页面的数量，动态生成导航。支持每次点击切换页面的回调。
 
 ## 兼容性

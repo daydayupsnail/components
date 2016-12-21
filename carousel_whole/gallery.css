@@ -16,9 +16,9 @@
   width: 640px;
   position: absolute; 
   top:0;
-  left: 0;
+  left: 640px;
 }
-.gallery .on{
+.gallery .galleryinner.on{
   left:0;
 }
 
@@ -34,9 +34,6 @@
 .gallery .imgbg{
   height: 148px;
 }
-.gallery .on{
-  
-}
 .gallery i{
     position: absolute;
     padding: 12px 8px;
@@ -44,11 +41,9 @@
     cursor: pointer;
 }
 .gallery i.last{
-    background: url(../../images/finance/ico.png) -99px 0px no-repeat;
     left: 12px;
 }
 .gallery i.next{
-    background: url(../../images/finance/ico.png) -115px 0px no-repeat;
     right: 12px;
 }
 .imgbox2 p{

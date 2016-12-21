@@ -18,18 +18,26 @@
   height: 222px;
   width: 640px;
 }
-.gallery .on{
-  left:0;
-}
 
 .gallery .imgbox2{
   position: absolute; 
   top:0;
-  left: 0;
+  left: 640px;
   width: 200px;
   height: 200px;
   margin-right: 20px;
 }
+
+.gallery .imgbox2:nth-child(1){
+  left: 0;
+}
+.gallery .imgbox2:nth-child(2){
+  left: 220px;
+}
+.gallery .imgbox2:nth-child(3){
+  left: 440px;
+}
+
 .gallery .imgbox2.last{
   margin-right: 0;
   
@@ -47,11 +55,9 @@
     cursor: pointer;
 }
 .gallery i.last{
-    background: url(../../images/finance/ico.png) -99px 0px no-repeat;
     left: 12px;
 }
 .gallery i.next{
-    background: url(../../images/finance/ico.png) -115px 0px no-repeat;
     right: 12px;
 }
 .imgbox2 p{
